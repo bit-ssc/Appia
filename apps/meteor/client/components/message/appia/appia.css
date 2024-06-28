@@ -1,0 +1,329 @@
+.message-appia-staff-service-survey.message .body.bm-msg,
+.message-appia-meeting_room.message .body.bm-msg,
+.message-appia-lexiang.message .body.bm-msg {
+	padding: 0;
+}
+
+.message-appia-approval.message .body.bm-msg {
+	padding: 0;
+
+	border-radius: 0;
+
+	background: none;
+}
+
+.message.message-appia-udeskMsg:hover,
+.message.message-appia-approval:hover {
+	background: none;
+}
+
+.appia-approval-wrapper {
+	width: 400px;
+	margin: 0;
+	padding: 0 20px;
+
+	border: 1px solid #bababa;
+	border-radius: 4px;
+
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.appia-approval-hover {
+	cursor: pointer;
+}
+
+.appia-approval-hover:hover {
+	border: 1px solid #1276e9;
+}
+
+.appia-approval-header {
+	padding: 14px 0 12px;
+
+	color: #000000;
+
+	font-weight: 600;
+}
+
+.appia-approval-header-status {
+	display: inline-block;
+
+	margin-right: 5px;
+	padding: 0 4px;
+
+	color: #ed7b2f;
+	border-radius: 4px;
+	background: #fef3e6;
+
+	font-weight: normal;
+}
+
+.appia-approval-body {
+	padding: 0 5px;
+}
+
+.appia-approval-item {
+	display: flex;
+
+	padding: 0 0 12px;
+}
+
+.appia-approval-item-label {
+	flex-shrink: 0;
+}
+
+.appia-approval-item-label::after {
+	content: '：';
+}
+
+.appia-approval-item-value {
+	flex: 1;
+}
+
+.appia-approval-item-text {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.appia-approval-item-anchor {
+	display: inline-block;
+	margin-right: 5px;
+	color: #4580FF;
+	cursor: pointer;
+}
+.appia-approval-item-tag-value {
+	display: inline-block;
+	white-space: nowrap;
+	margin-right: 5px;
+	padding: 0 4px;
+	line-height: 20px;
+	border-radius: 3px;
+	color: #1B5BFF;
+	background-color: #E8F2FF;
+	border: 1px solid #E8F2FF;
+}
+
+.appia-approval-footer {
+	display: flex;
+
+	padding: 14px 5px;
+
+	border-top: 1px solid #ececec;
+	align-items: center;
+}
+
+.appia-approval-btn {
+	min-width: 110px;
+	margin-right: 16px;
+	margin-left: 16px;
+	padding: 5px 20px;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.9);
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+
+	line-height: 1.5715;
+}
+
+.appia-feedback-btn {
+	display: flex;
+
+	padding: 8px 0;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.4);
+	border-top: 1px solid #e7e7e7;
+
+	font-size: 14px;
+	align-items: center;
+	justify-content: center;
+}
+
+.appia-feedback-btn:hover {
+	color: #2878ff;
+}
+
+.appia-feedback-btn-reverse svg {
+	transform: scale(1, -1);
+}
+
+@keyframes loadingCircle {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.appia-approval-btn svg {
+	margin-right: 5px;
+
+	animation: loadingCircle 1s infinite linear;
+}
+
+.appia-approval-btn-primary {
+	color: #2878ff;
+	border-color: #2878ff;
+}
+
+.appia-approval-btn-disabled {
+	cursor: default;
+
+	color: rgba(0, 0, 0, 0.25);
+	border-color: #d9d9d9;
+	background: #f5f5f5;
+}
+
+.appia-approval-wrapper .appia-approval-footer a {
+	color: #555555;
+}
+
+.appia-approval-wrapper .appia-approval-footer a:hover {
+	color: #1d74f5;
+}
+
+.udisk-robot-wrapper {
+	max-width: 460px;
+
+	border: 1px solid #dcdcdc;
+	border-radius: 8px;
+}
+
+.udisk-robot-content {
+	padding: 12px;
+}
+
+.udisk-robot-actions {
+	display: flex;
+
+	height: 40px;
+
+	border-top: 1px solid #dcdcdc;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.udisk-robot-action {
+	flex: 1;
+
+	text-align: center;
+
+	border-left: 1px solid #dcdcdc;
+}
+
+.udisk-robot-action:first-child {
+	border-left: 0 none;
+}
+
+.udisk-robot-action span {
+	position: relative;
+
+	display: inline-block;
+
+	height: 24px;
+	padding-left: 32px;
+
+	line-height: 24px;
+}
+
+.udisk-robot-action span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 24px;
+	height: 24px;
+
+	content: ' ';
+
+	background: url("/images/staff-service/useful.png") no-repeat center center;
+	background-size: cover;
+}
+
+.udisk-robot-action[data-status="1"] span::before {
+	transform: rotate(180deg);
+}
+
+.appia-share-media-wrapper {
+	display: flex;
+
+	width: 400px;
+
+	cursor: pointer;
+	align-items: center;
+}
+
+.appia-share-media-cover {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.appia-share-media-cover img {
+	display: block;
+
+	width: 50px;
+	height: 50px;
+}
+
+.appia-share-media-title {
+	overflow: hidden;
+
+	max-height: 36px;
+
+	color: #000000;
+
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.appia-share-media-description {
+	color: #7c7d7f;
+
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.appia-lexiang-wrapper {
+	overflow: hidden;
+
+	width: 600px;
+	margin: 0;
+	padding: 0;
+
+	border-radius: 4px;
+
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.appia-lexiang-image {
+	width: 100%;
+	aspect-ratio: 1.78;
+	object-fit: fill;
+}
+
+.appia-lexiang-title {
+	margin-right: 10px;
+	margin-left: 10px;
+
+	color: #000000;
+
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.appia-lexiang-content {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+	color: #7c7d7f;
+
+	font-size: 12px;
+	line-height: 16px;
+}

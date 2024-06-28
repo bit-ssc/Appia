@@ -1,0 +1,51 @@
+.appia-side-menu-wrapper {
+	position: absolute;
+	z-index: 1000;
+	top: 60px;
+	right: 8px;
+}
+
+.appia-side-menu {
+	display: flex;
+
+	padding: 8px 15px;
+
+	cursor: pointer;
+
+	color: rgba(0, 0, 0, 0.9);
+	border-radius: 60px 0 0 60px;
+	background: #ffffff;
+	box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.08);
+
+	font-size: 14px;
+	line-height: 24px;
+	align-items: center;
+}
+
+.appia-side-menu-icon-wrapper {
+	display: flex;
+
+	font-size: 24px;
+}
+
+.appia-side-menu-icon {
+	display: block;
+
+	width: 28px;
+	height: 28px;
+}
+
+.appia-side-staff-service-button-wrapper {
+	position: absolute;
+	z-index: 1000;
+	right: 10px;
+	bottom: 120px;
+
+	width: 106px;
+	height: 106px;
+
+	cursor: pointer;
+
+	background: url("/images/staff-service/staff-service.png") 0 0;
+	background-size: 106px 106px;
+}

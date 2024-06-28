@@ -1,0 +1,552 @@
+/* contact */
+.contact-wrapper {
+	display: flex;
+
+	height: 100%;
+}
+
+/* contact sidebar */
+.contact-sidebar {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 280px;
+	height: 100vh !important;
+
+	border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.contact-header {
+	/* height: 60px;
+
+  padding: 20px 16px;
+
+  color: #1276e9;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px; */
+	display: flex;
+
+	padding: 16px 12px;
+	align-items: center;
+}
+
+.company-name-wrapper {
+	display: flex;
+
+	padding: 0 0 10px 16px;
+
+	cursor: pointer;
+	align-content: center;
+	align-items: center;
+}
+
+.contact-content-wrapper {
+	position: relative;
+
+	overflow: auto;
+	flex: 1;
+
+	margin: 0 12px 10px;
+}
+
+.contact-content-loading {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-content-item-title {
+	display: flex;
+
+	height: 36px;
+	padding-right: 16px;
+
+	cursor: pointer;
+
+	font-size: 14px;
+	line-height: 36px;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.contact-content-item-title-icon {
+	overflow: hidden;
+
+	width: 0;
+	height: 0;
+	margin: 0 12px 0 6px;
+
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #7d7d7d;
+}
+
+.contact-content-item-title-toggle .contact-content-item-title-icon {
+	transform: rotate(90deg);
+}
+
+.contact-content-item-title-text {
+	overflow: hidden;
+	flex: 1;
+
+	margin-left: 8px;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.contact-content-item-user-icon {
+	display: flex;
+
+	height: 20px;
+	margin-left: 5px;
+	padding: 0 4px;
+
+	color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	background-color: #f5f6f9;
+
+	line-height: 20px;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.contact-content-item-count {
+	padding-left: 5px;
+}
+
+.contact-content-item-title-active,
+.contact-content-item-content-user-active,
+.contact-content-item-content-user:hover,
+.contact-content-item-title:hover {
+	border-radius: 4px;
+	background: #eeeeee;
+}
+
+.contact-content-item-content-user {
+	display: flex;
+
+	padding: 4px 0;
+
+	cursor: pointer;
+	align-content: center;
+	align-items: center;
+}
+
+.contact-content-item-content-user-avatar {
+	position: relative;
+
+	margin-left: 12px;
+
+	border-radius: 4px;
+}
+
+.contact-content-item-content-user-status {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	width: 6px;
+	height: 6px;
+
+	border-radius: 50%;
+	background-color: #f0f0f0;
+}
+
+.contact-content-item-content-user-status-online {
+	background-color: #2be0a5;
+}
+
+.contact-content-item-content-user-status-busy {
+	background-color: #2be0a5;
+}
+
+.contact-content-item-content-user-name {
+	padding: 0 0 0 8px;
+}
+
+/* contact user */
+.contact-info-wrapper {
+	display: flex;
+	overflow-y: auto;
+	flex-direction: column;
+	flex: 1;
+
+	border-radius: 4px;
+
+	background: #ededed;
+}
+
+.contact-info-code {
+	height: 20px;
+	margin-left: 8px;
+	padding: 0 4px;
+
+	color: #ffffff;
+	border-radius: 4px;
+
+	background: linear-gradient(180deg, rgba(40, 120, 255, 0.8) 0%, rgba(40, 120, 255, 0.4) 100%);
+
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.contact-info-count {
+	margin-left: 8px;
+	padding: 0 4px;
+
+	color: #4e5969;
+	border-radius: 4px;
+
+	background: #DDDDDD;
+
+	font-size: 12px;
+}
+
+.contact-info-divider::before {
+	padding: 0 12px;
+
+	content: '|';
+
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.contact-info-divider:first-child::before {
+	display: none;
+}
+
+.contact-info-header {
+	height: 60px;
+
+	padding: 20px 36px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.contact-info-media-wrapper {
+	display: flex;
+
+	margin: 0 0 18px;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact-info-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	width: 480px;
+	margin: 0 auto;
+	padding: 30px;
+
+	color: #000000;
+	align-content: center;
+	justify-content: center;
+}
+
+.contact-info-content {
+	padding: 24px;
+
+	background: #ffffff;
+}
+
+.contact-info-user-avatar {
+	position: relative;
+
+	/* overflow: hidden; */
+
+	border: 1px solid #d7d7d7;
+	border-radius: 6px;
+}
+
+.contact-info-media-wrapper img {
+	width: 65px;
+	height: 65px;
+}
+
+.contact-info-user-info {
+	display: flex;
+
+	padding: 10px 0;
+
+	border-top: 1px solid #f3f3f3;
+}
+
+.contact-info-user-info-icon {
+	display: flex;
+
+	width: 20px;
+	height: 22px;
+	margin-right: 4px;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-info-user {
+	padding: 0 0 0 24px;
+}
+
+.contact-info-user-name-wrapper {
+	display: flex;
+
+	/* margin: 0 0 18px; */
+
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	align-content: center;
+	align-items: center;
+}
+
+.contact-info-user-status {
+	position: absolute;
+	right: -14px;
+	bottom: -4px;
+
+	width: 14px;
+	height: 14px;
+	margin: 0 9px 0 0;
+
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	background: #9ea2a8;
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.10980392156862745);
+}
+
+.contact-info-user-status-online {
+	background: #2be0a5;
+}
+
+.contact-info-user-status-offline {
+	background: #9ea2a8;
+}
+
+.contact-info-user-status-busy {
+	background: #f5455c;
+}
+
+.contact-info-user-date {
+	margin-top: 18px;
+
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.contact-info-gray,
+.contact-info-user-info-label,
+.contact-info-user-status-text {
+	/* color: #555555; */
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-info-user-date .contact-info-gray {
+	margin-right: 12px;
+}
+
+.contact-info-user-status-text {
+	margin: 0 0 24px;
+}
+
+.contact-info-user-info-wrapper {
+	margin-top: 16px;
+
+	/* border-top: 1px solid #ececec; */
+}
+
+.contact-info-user-info-label {
+	min-width: 64px;
+	margin: 0 5px 0 0;
+
+	font-size: 16px;
+	flex-shrink: 0;
+}
+
+.contact-info-user-info-value {
+	font-size: 16px;
+}
+
+.contact-info-user-btn {
+	width: 100%;
+	height: 46px;
+	margin: 18px auto 0;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: white;
+	border-radius: 4px;
+	background: #1276e9;
+
+	font-size: 18px;
+	line-height: 46px;
+}
+
+.contact-search-item {
+	display: flex;
+
+	padding: 10px 0;
+
+	cursor: pointer;
+	align-content: center;
+	align-items: center;
+}
+
+.contact-search-item-active {
+	background: #d9ebff;
+}
+
+.contact-search-item-avatar {
+	position: relative;
+
+	margin-left: 24px;
+
+	border-radius: 4px;
+}
+
+.contact-search-item-name {
+	overflow: hidden;
+
+	padding: 0 0 0 8px;
+
+	font-size: 14px;
+}
+
+.contact-search-item-desc {
+	overflow: hidden;
+
+	margin-top: 1px;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	color: rgb(156, 160, 163);
+
+	font-size: 12px;
+}
+
+.contact-margin-bottom {
+	margin-bottom: 8px;
+}
+
+.contact-user-info-department {
+	color: rgba(0, 0, 0, 0.9);
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.contact-user-info-department-desc {
+	color: rgba(0, 0, 0, 0.6);
+
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.contact-user-info-second-row {
+	display: flex;
+	flex-direction: row;
+
+	margin-top: 8px;
+	align-items: center;
+}
+
+.contact-user-info-position {
+	margin-right: 6px;
+
+	color: rgba(0, 0, 0, 0.9);
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.contact-user-info-tag {
+	margin-left: 6px;
+	padding: 4px;
+
+	color: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	background: #f5f6f9;
+
+	font-size: 12px;
+}
+
+.contact-user-info-work-type {
+	margin-right: 6px;
+	padding: 0 4px;
+
+	color: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	background: #f5f6f9;
+
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.contact-info-roles {
+	margin-top: 12px;
+}
+
+.contact-info-roles-title {
+	padding: 8px 0;
+
+	color: rgba(0, 0, 0, 0.9);
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.contact-info-roles-dep {
+	padding: 8px 0;
+
+	border-top: 1px solid #f3f3f3;
+}
+
+.contact-info-role-item {
+	padding-right: 12px;
+
+	color: rgba(0, 0, 0, 0.9);
+
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.contact-info-dep-text {
+	color: rgba(0, 0, 0, 0.4);
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.see-full-profile {
+	padding-top: 8px;
+}
+
+.see-full-profile-btn {
+	color: #2878ff;
+
+	font-size: 14px;
+	line-height: 22px;
+}

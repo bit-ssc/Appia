@@ -1,0 +1,9 @@
+LICENSE
+README.md
+docker-compose.yml
+tests/e2e/test-failures/
+apps/meteor/.meteor/local
+apps/meteor/.meteor/.id
+node_modules
+**/node_modules
+**/.turbo

@@ -1,0 +1,28 @@
+.appia-radio-group {
+	display: flex;
+}
+
+.appia-radio-item {
+	display: flex;
+	flex: 1;
+
+	margin-right: 10px;
+
+	cursor: pointer;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.appia-radio-icon {
+	width: 18px;
+	height: 18px;
+	margin: 5px;
+
+	border: 1px solid #dcdcdc;
+	border-radius: 9px;
+}
+
+.appia-radio-item-active .appia-radio-icon {
+	border: 5px solid #2878ff;
+}
