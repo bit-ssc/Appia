@@ -628,7 +628,7 @@ jobs:
       - docker-image-publish
     steps:
       - name: Send context to seperate pipeline
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.DISTRIBUTION_TOKEN }}
           event-type: new_release
