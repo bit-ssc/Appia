@@ -1,0 +1,28 @@
+.appia__team-info .rcx-input-box__wrapper {
+	border-width: 1px !important;
+}
+
+.appia__team-info .appia__team-info__wrapper {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.appia__team-info .appia__team-info__title-value {
+	color: rgba(0, 0, 0, 0.4);
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.appia__team-info .appia__team-info__title-label {
+	margin: 12px 0;
+
+	color: rgba(0, 0, 0, 0.9);
+
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.appia__team-info .appia__team-info-search-input,
+.appia__team-info .appia__team-info__no-padding-top {
+	padding-top: 0 !important;
+}

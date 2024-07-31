@@ -1,0 +1,5 @@
+<template name="forwardMessageList">
+	<div class="bm-forward-msg-list">
+		{{#each msg in messages}}{{> message showRoles=true hideActions=true index=@index shouldCollapseReplies=false msg=msg room=room subscription=subscription settings=settings u=user}}{{/each}}
+	</div>
+</template>
