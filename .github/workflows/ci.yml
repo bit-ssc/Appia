@@ -101,7 +101,7 @@ jobs:
         with:
           swap-size-gb: 4
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup NodeJS
         uses: ./.github/actions/setup-node
@@ -317,7 +317,7 @@ jobs:
     needs: [tests-done, release-versions]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Restore build
         uses: actions/download-artifact@v3
@@ -396,7 +396,7 @@ jobs:
     needs: [build, checks, release-versions]
     if: github.event_name == 'release' || github.ref == 'refs/heads/develop'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Restore build
         uses: actions/download-artifact@v3
