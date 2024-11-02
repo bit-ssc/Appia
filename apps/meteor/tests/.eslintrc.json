@@ -1,0 +1,14 @@
+{
+	"env": {
+		"mocha": true
+	},
+	"parser": "@typescript-eslint/parser",
+	"globals": {
+		"browser": false,
+		"expect": false
+	},
+	"plugins": ["no-floating-promise"],
+	"rules": {
+		"no-floating-promise/no-floating-promise": "error"
+	}
+}

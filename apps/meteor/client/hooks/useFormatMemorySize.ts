@@ -1,0 +1,28 @@
+import { numberFormat } from '../../lib/utils/stringUtils';
+
+const formatMemorySize = (memorySize: number): string | null => {
+	if (typeof memorySize !== 'number') {
+		return null;
+	}
+
+	const units = ['bytes', 'kB', 'MB', 'GB'];
+
+	let order;
+	for (order = 0; order < units.length - 1; ++order) {
+		const upperLimit = Math.pow(1024, order + 1);
+
+		if (memorySize < upperLimit) {
+			break;
+		}
+	}
+
+	const divider = Math.pow(1024, order);
+	const decimalDigits = order === 0 ? 0 : 2;
+	return `${numberFormat(memorySize / divider, decimalDigits)} ${units[order]}`;
+};
+
+export const getDefaultName = (enterprise: string, memberNumber?: number) => {
+	return `${enterprise?.toUpperCase()}-${`${10000 + (memberNumber ?? 0)}`.slice(-3)}`;
+};
+
+export const useFormatMemorySize = (): ((memorySize: number) => string | null) => formatMemorySize;

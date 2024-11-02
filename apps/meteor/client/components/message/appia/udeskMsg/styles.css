@@ -1,0 +1,169 @@
+.udesk-survey-wrapper {
+	width: 400px;
+	margin-top: 5px;
+	padding: 14px 20px;
+
+	border: 1px solid #bababa;
+	border-radius: 4px;
+	background: #ffffff;
+}
+
+.udesk-survey-title {
+	padding: 0 0 12px;
+
+	color: #000000;
+
+	font-size: 16px;
+}
+
+.udesk-survey-subtitle {
+	font-size: 14px;
+}
+
+.udesk-survey-resolved-wrapper {
+	display: flex;
+
+	padding: 12px 0;
+}
+
+.udesk-survey-resolved {
+	display: flex;
+	flex: 1;
+
+	padding: 5px 10px;
+
+	cursor: pointer;
+
+	border: 1px solid #bababa;
+	border-radius: 4px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.udesk-survey-resolved-icon {
+	margin-right: 5px;
+
+	vertical-align: -0.125em;
+
+	font-size: 20px;
+	line-height: 0;
+}
+
+.udesk-survey-resolved-active,
+.udesk-survey-resolved:hover {
+	color: #00a870;
+	border-color: #00a870;
+}
+
+.udesk-survey-unresolved {
+	margin-left: 10px;
+}
+
+.udesk-survey-unresolved.udesk-survey-resolved-active,
+.udesk-survey-unresolved:hover {
+	color: #e34d59;
+	border-color: #e34d59;
+}
+
+.udesk-survey-option-wrapper {
+	padding: 0 0 10px;
+}
+
+.udesk-survey-textarea-wrapper {
+	margin: 5px 0 10px;
+}
+
+.udesk-survey-textarea-wrapper textarea {
+	width: 100%;
+	padding: 5px;
+
+	resize: none;
+
+	border: 1px solid #bababa;
+}
+
+.udesk-survey-btn-wrapper {
+	text-align: center;
+}
+
+.udesk-survey-btn {
+	width: 100px;
+}
+
+.udesk-faq-title {
+	font-weight: 700;
+}
+
+.udesk-top-ask-list li,
+.udesk-faq-list li {
+	cursor: pointer;
+
+	color: var(--link-font-color);
+
+	line-height: 1.5;
+}
+
+.udesk-top-ask-list li:hover,
+.udesk-faq-list li:hover {
+	opacity: 0.6;
+}
+
+.udesk-top-ask-title {
+	font-weight: 600;
+}
+
+.udesk-top-ask-tabs {
+	display: flex;
+
+	margin: 0 0 5px;
+	padding: 0 !important;
+
+	list-style: none !important;
+
+	border-bottom: 1px solid #dddddd;
+	flex-wrap: wrap;
+}
+
+.udesk-top-ask-tabs li {
+	position: relative;
+
+	margin-right: 10px;
+
+	padding: 5px 0;
+	flex-shrink: 0;
+}
+
+.udesk-top-ask-tabs li:hover,
+.udesk-top-ask-tabs li.active {
+	color: var(--link-font-color);
+}
+
+.udesk-top-ask-tabs li::before,
+.udesk-top-ask-list li::before {
+	display: none;
+}
+
+.udesk-top-ask-tabs li.active::after {
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	left: 0;
+
+	height: 1px;
+
+	content: ' ';
+
+	background: var(--link-font-color);
+}
+
+.udesk-top-ask-tabs li,
+.udesk-top-ask-list li {
+	cursor: pointer;
+}
+
+.udesk-top-ask-list {
+	padding: 0 0 0 24px !important;
+
+	list-style: decimal !important;
+}
