@@ -1,0 +1,12 @@
+/* 覆盖组件样式 解决多列出现不可滚动情况 */
+
+/* list 中item 组件最近上层 */
+
+#scrollableDiv .ant-spin-container .ant-list-items {
+	display: flex;
+	height: 100%;
+	justify-content: start;
+	align-items: start;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
